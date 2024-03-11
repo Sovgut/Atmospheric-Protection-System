@@ -3,12 +3,12 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Factions>
 
-		<Faction Tag="APS" Founder="Automated system">
+		<Faction Tag="APS" Founder="Core">
 			<Id>
 				<TypeId>MyObjectBuilder_FactionDefinition</TypeId>
 				<SubtypeId>APS</SubtypeId>
 			</Id>
-			<DisplayName>Automated Protection System</DisplayName>
+			<DisplayName>Automatic Protection System</DisplayName>
 			<IsDefault>true</IsDefault>
 			<DefaultRelation>Enemies</DefaultRelation>
 			<AcceptHumans>false</AcceptHumans>

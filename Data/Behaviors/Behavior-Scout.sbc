@@ -26,6 +26,7 @@
 				[WeaponSystem:APS-Weapons-Scout]
 
 				[Triggers:APS-Trigger-GrindDamage]
+				[Triggers:APS-Scout-Trigger-Retreat]
 
 			</Description>
 
@@ -65,36 +66,29 @@
 
 				[RivalAI Autopilot]
 
-				[FlyLevelWithGravity:true]
-				[IdealPlanetAltitude:1000]
-				[MinimumPlanetAltitude:300]
-				[AltitudeTolerance:150]
+				[UseProjectileLeadPrediction:true]
 
-				[MaxAngleForLeveledAscent:45]
-				[MaxVerticalSpeed:40]
+				[WaypointTolerance:40]
 				[IdealMinSpeed:40]
 				[IdealMaxSpeed:100]
-				[MaxSpeedTolerance:5]
+				[MaxSpeedTolerance:25]
 				[SlowDownOnWaypointApproach:true]
-				[ExtraSlowDownDistance:300]
+				[ExtraSlowDownDistance:500]
 
-				[WaypointTolerance:300]
 				[EngageDistancePlanet:1500]
 				[DisengageDistancePlanet:2000]
 
+				[AllowStrafing:true]
+				[StrafeMinCooldownMs:1000]
+				[StrafeMaxCooldownMs:3000]
+				[StrafeDistanceCutOff:300]
+
+				[StrafeMinimumTargetDistance:500]
+
 				[UseVelocityCollisionEvasion:true]
 				[CollisionEvasionWaypointDistance:200]
-				[CollisionFallEvasionWaypointDistance:200]
-				[CollisionEvasionResumeDistance:300]
-
-				[UseVerticalRetreat:true]
-
-				[OffsetPlanetMinDistFromTarget:300]
-				[OffsetPlanetMaxDistFromTarget:500]
-				[OffsetPlanetMinTargetAltitude:300]
-				[OffsetPlanetMaxTargetAltitude:500]
-				[PadDistanceFromTarget:300]
-
+				[CollisionFallEvasionWaypointDistance:300]
+				[CollisionEvasionResumeDistance:500]
 
 			</Description>
 
@@ -116,7 +110,7 @@
 				[BlockTargets:Thrusters]
 				[UseTargetRefresh:true]
 
-				[MaxDistance:10000]
+				[MaxDistance:5000]
 
 				[TimeUntilTargetAcquisition:10]
 				[TimeUntilNextEvaluation:3]
@@ -130,10 +124,10 @@
 				[MatchAnyFilters:MovementScore]
 				[MatchAnyFilters:LineOfSight]
 
-				[NonBroadcastVisualRange:2000]
+				[NonBroadcastVisualRange:1800]
 				[MinMovementScore:1000]
-				[MaxMovementDetectableDistance:5000]
-				[MaxLineOfSight:2000]
+				[MaxMovementDetectableDistance:2500]
+				[MaxLineOfSight:1800]
 
 				[Owners:Player]
 				[Owners:NPC]
@@ -161,7 +155,7 @@
 				[BlockTargets:Thrusters]
 				[UseTargetRefresh:true]
 
-				[MaxDistance:10000]
+				[MaxDistance:5000]
 
 				[TimeUntilTargetAcquisition:10]
 				[TimeUntilNextEvaluation:3]

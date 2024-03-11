@@ -14,7 +14,7 @@
 
 				[UseStaticGuns:true]
 				[MaxStaticWeaponRange:1200]
-				[WeaponMaxAngleFromTarget:45]
+				[WeaponMaxAngleFromTarget:20]
 
 				[UseBarrageFire:true]
 				[MaxFireRateForBarrageWeapons:12]

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Scout-Trigger-Retreat</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Trigger]
+
+				[Type:Damage]
+				[StartsReady:true]
+				[UseTrigger:true]
+
+				[DamageTypes:Any]
+				[ExcludedDamageTypes:Environment]
+
+				[PercentageOfHealthRemaining:60]
+
+				[MinCooldownMs:15000]
+				[MaxCooldownMs:15001]
+				[MaxActions:1]
+				[Actions:APS-Scout-TriggerAction-Retreat]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Scout-TriggerAction-Retreat</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Action]
+
+				[UseChatBroadcast:true]
+				[ChatData:APS-Scout-TriggerChat-Retreat-A]
+				[ChatData:APS-Scout-TriggerChat-Retreat-B]
+				[ChatData:APS-Scout-TriggerChat-Retreat-C]
+
+				[CreateKnownPlayerArea:true]
+				[KnownPlayerAreaRadius:3000]
+				[KnownPlayerAreaTimer:15]
+				[KnownPlayerAreaMaxSpawns:1]
+
+				[Retreat:true]
+				[ChangeAntennaRanges:true]
+				[AntennaRangeChangeType:Decrease]
+				[AntennaRangeChangeAmount:150000]
+
+				[ChangeBehaviorSubclass:true]
+				[NewBehaviorSubclass:CargoShip]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Scout-TriggerChat-Retreat-A</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Chat]
+
+				[UseChat:true]
+				[StartsReady:true]
+
+				[IgnoreAntennaRequirement:true]
+				[SendToAllOnlinePlayers:true]
+
+				[Author:Scout]
+				[Color:White]
+
+				[ChatMessages:An attempt was detected to damage system property by entity "{PlayerName}".]
+				[BroadcastChatType:Chat]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Scout-TriggerChat-Retreat-B</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Chat]
+
+				[UseChat:true]
+				[StartsReady:true]
+
+				[IgnoreAntennaRequirement:true]
+				[SendToAllOnlinePlayers:true]
+
+				[Author:Scout]
+				[Color:White]
+
+				[ChatMessages:A restricted area has been created for subsequent inspection by the combat module.]
+				[BroadcastChatType:Chat]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Scout-TriggerChat-Retreat-C</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Chat]
+
+				[UseChat:true]
+				[StartsReady:true]
+
+				[IgnoreAntennaRequirement:true]
+				[SendToAllOnlinePlayers:true]
+
+				[Author:Scout]
+				[Color:White]
+
+				[GPSLabel:Restricted Area]	
+				[ChatMessages:{GPS}]
+				[BroadcastChatType:Chat]
+
+			</Description>
+
+		</EntityComponent>
+
+	</EntityComponents>
+</Definitions>
