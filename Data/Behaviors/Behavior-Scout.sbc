@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Behavior-Scout</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Behavior]
+
+				[BehaviorName:Hunter]
+
+				[AutopilotData:APS-Autopilot-Scout-A]
+				[SecondaryAutopilotData:APS-Autopilot-Scout-B]
+
+				[TargetData:APS-Target-Scout-A]
+				[OverrideTargetData:APS-Target-Scout-B]
+
+				[EngageOnTargetLineOfSight:true]
+				[EngageOnWeaponActivation:true]
+
+				[WeaponSystem:APS-Weapons-Scout]
+
+				[Triggers:APS-Trigger-GrindDamage]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Autopilot-Scout-A</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Autopilot]
+
+				[WaypointTolerance:25]
+				[IdealMinSpeed:10]
+				[IdealMaxSpeed:20]
+				[MaxSpeedTolerance:5]
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:150]
+				[IdealPlanetAltitude:300]
+
+				[AllowStrafing:true]
+				[StrafeMinDurationMs:500]
+				[StrafeMaxDurationMs:1500]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Autopilot-Scout-B</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Autopilot]
+
+				[FlyLevelWithGravity:true]
+				[IdealPlanetAltitude:1000]
+				[MinimumPlanetAltitude:300]
+				[AltitudeTolerance:150]
+
+				[MaxAngleForLeveledAscent:45]
+				[MaxVerticalSpeed:40]
+				[IdealMinSpeed:40]
+				[IdealMaxSpeed:100]
+				[MaxSpeedTolerance:5]
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:300]
+
+				[WaypointTolerance:300]
+				[EngageDistancePlanet:1500]
+				[DisengageDistancePlanet:2000]
+
+				[UseVelocityCollisionEvasion:true]
+				[CollisionEvasionWaypointDistance:200]
+				[CollisionFallEvasionWaypointDistance:200]
+				[CollisionEvasionResumeDistance:300]
+
+				[UseVerticalRetreat:true]
+
+				[OffsetPlanetMinDistFromTarget:300]
+				[OffsetPlanetMaxDistFromTarget:500]
+				[OffsetPlanetMinTargetAltitude:300]
+				[OffsetPlanetMaxTargetAltitude:500]
+				[PadDistanceFromTarget:300]
+
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Target-Scout-A</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Target]
+
+				[UseCustomTargeting:true]
+				[Target:PlayerAndGrid]
+				[BlockTargets:Containers]
+				[BlockTargets:Power]
+				[BlockTargets:Thrusters]
+				[UseTargetRefresh:true]
+
+				[MaxDistance:10000]
+
+				[TimeUntilTargetAcquisition:10]
+				[TimeUntilNextEvaluation:3]
+
+				[MatchAllFilters:OutsideOfSafezone]
+				[MatchAllFilters:Owner]
+				[MatchAllFilters:Relation]
+				[MatchAllFilters:Powered]
+
+				[MatchAnyFilters:Broadcasting]
+				[MatchAnyFilters:MovementScore]
+				[MatchAnyFilters:LineOfSight]
+
+				[NonBroadcastVisualRange:2000]
+				[MinMovementScore:1000]
+				[MaxMovementDetectableDistance:5000]
+				[MaxLineOfSight:2000]
+
+				[Owners:Player]
+				[Owners:NPC]
+				[Relations:Enemy]
+
+				[GetTargetBy:ClosestDistance]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Target-Scout-B</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Target]
+
+				[UseCustomTargeting:true]
+				[Target:PlayerAndGrid]
+				[BlockTargets:Containers]
+				[BlockTargets:Power]
+				[BlockTargets:Thrusters]
+				[UseTargetRefresh:true]
+
+				[MaxDistance:10000]
+
+				[TimeUntilTargetAcquisition:10]
+				[TimeUntilNextEvaluation:3]
+
+				[MatchAllFilters:OutsideOfSafezone]
+				[MatchAllFilters:Owner]
+				[MatchAllFilters:Relation]
+				[MatchAllFilters:Powered]
+
+				[Owners:Player]
+				[Owners:NPC]
+				[Relations:Enemy]
+
+				[GetTargetBy:ClosestDistance]
+
+			</Description>
+
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+
+		<!--Ramming-->
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Trigger-RandomRamming</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Trigger]
+
+				[UseTrigger:true]
+				[Type:TargetNear]
+				[TargetDistance:600]
+				[MinCooldownMs:60000]
+				[MaxCooldownMs:120000]
+				[StartsReady:true]
+
+				[MaxActions:-1]
+				[Actions:APS-Action-RandomRamming]
+
+			</Description>
+
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Action-RandomRamming</SubtypeId>
+			</Id>
+			<Description>
+
+				[RivalAI Action]
+
+				[Chance:8]
+				[Ramming:true]
+
+			</Description>
+
+		</EntityComponent>
+
+	</EntityComponents>
+</Definitions>
