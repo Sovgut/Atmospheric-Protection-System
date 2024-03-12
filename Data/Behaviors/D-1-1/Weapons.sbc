@@ -20,8 +20,6 @@
 				[MaxFireRateForBarrageWeapons:12]
 
 				[UseAmmoReplenish:true]
-				[AmmoReplenishClipAmount:15]
-				[MaxAmmoReplenishments:10]
 
 			</Description>
 		</EntityComponent>

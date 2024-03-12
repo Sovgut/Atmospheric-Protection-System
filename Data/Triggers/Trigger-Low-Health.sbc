@@ -2,26 +2,24 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Manipulation-Common</SubtypeId>
+				<SubtypeId>APS-Trigger-Retreat-Low-Health</SubtypeId>
 			</Id>
 			<Description>
+				[RivalAI Trigger]
 
-				[MES Manipulation]
+				[UseTrigger:true]
+				[StartsReady:true]
+				[Type:HealthPercentage]
 
-				[UseRivalAi:true]
-				[RivalAiReplaceRemoteControl:true]
-				[DisableDampeners:false]
+				[UseFailCondition:true]
+				[PercentageOfHealthRemaining:75]
 
-				[OverrideBlockDamageModifier:true]
-				[BlockDamageModifier:25]
-
+				[MaxActions:1]
+				[Actions:APS-Action-Retreat]
 			</Description>
-
 		</EntityComponent>
-
 	</EntityComponents>
 </Definitions>

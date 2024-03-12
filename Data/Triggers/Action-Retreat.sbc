@@ -1,28 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Weapons-D-1-2</SubtypeId>
+				<SubtypeId>APS-Action-Retreat</SubtypeId>
 			</Id>
 			<Description>
+				[RivalAI Action]
+				
+				[ChangeAntennaRanges:true]
+				[AntennaRangeChangeType:Set]
+				[AntennaRangeChangeAmount:1200]
 
-				[RivalAI Weapons]
+				[ChangeBehaviorSubclass:true]
+				[NewBehaviorSubclass:CargoShip]
 
-				[UseStaticGuns:true]
-				[MaxStaticWeaponRange:4000]
-				[WeaponMaxAngleFromTarget:20]
-
-				[UseBarrageFire:true]
-				[MaxFireRateForBarrageWeapons:12]
-
-				[UseAmmoReplenish:true]
-
+				[Retreat:true]
 			</Description>
 		</EntityComponent>
-
 	</EntityComponents>
 </Definitions>

@@ -1,28 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Weapons-D-1-2</SubtypeId>
+				<SubtypeId>APS-Trigger-Compromised</SubtypeId>
 			</Id>
 			<Description>
+				[RivalAI Trigger]
 
-				[RivalAI Weapons]
+				[UseTrigger:true]
+				[StartsReady:true]
+				[Type:Compromised]
 
-				[UseStaticGuns:true]
-				[MaxStaticWeaponRange:4000]
-				[WeaponMaxAngleFromTarget:20]
+				[MinCooldownMs:15000]
+				[MaxCooldownMs:15001]
 
-				[UseBarrageFire:true]
-				[MaxFireRateForBarrageWeapons:12]
-
-				[UseAmmoReplenish:true]
-
+				[MaxActions:-1]
+				[ActionExecution:all]
+				[Actions:APS-Action-Disable-Armor]
+				[Actions:APS-Action-Defeat]
 			</Description>
 		</EntityComponent>
-
 	</EntityComponents>
 </Definitions>

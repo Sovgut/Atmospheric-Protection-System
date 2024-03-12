@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>APS-Trigger-D-1-1-Spawn-D-1-2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+
+	  [Type:Damage]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+
+	  [DamageTypes:any]
+	  [ExcludedDamageTypes:Environment]
+
+	  [MinCooldownMs:600000]
+
+	  [Actions:APS-Action-D-1-1-Spawn-D-1-2]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>APS-Spawn-D-1-2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [StartsReady:true]
+      [SpawnMinCooldown:600000]
+      [MaxSpawns:5]
+      
+	    [SpawningType:PlanetaryCargoShip]
+      [SpawnGroups:APS-SpawnGroup-D-1-2]
+      
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:3000]
+      [MaxDistance:5500]
+      [MinAltitude:1000]
+      [MaxAltitude:1500]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>APS-Action-D-1-1-Spawn-D-1-2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [SpawnEncounter:true]
+	  [Spawner:APS-Spawn-D-1-2]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -30,13 +30,14 @@
 -   [x] Line of Sight Detection Range: `1800m`
 -   [x] Movement Detection Range: `2500m`
 -   [x] Movement Detection Score: `1000`
+-   [x] Retreat on
+    -   [x] Low Health (`75%`)
+    -   [x] No Weapon
 -   [x] Combat Range
     -   [x] Chaingun: `1200m`
--   [ ] Spawn `Warden` in `300s` after damage taken
--   [ ] Weather Behavior
-    -   [ ] Less Detection Range
-    -   [ ] Less Broadcast Range
-    -   [ ] Increased `Warden` spawn time
+-   [ ] Abilities
+    -   [ ] Spawn `Warden` (600s cooldown)
+    -   [ ] Try to call assistance from `Warden` (300s cooldown)
 
 ### _Warden_ (**D-1-2**)
 
@@ -44,12 +45,13 @@
 
 #### Features
 
--   [ ] Threat Score: `50`
--   [ ] Combat Phase: `true`
--   [ ] Peace Phase: `true`
--   [ ] Broadcast Detection Range: `2500m`
--   [ ] Line of Sight Detection Range: `1800m`
--   [ ] Combat Range
-    -   [ ] Chaingun: `1200m`
-    -   [ ] Laser: `1200m`
-    -   [ ] Canon: `4000m`
+-   [x] Threat Score: `50`
+-   [x] Combat Phase: `true`
+-   [x] Peace Phase: `true`
+-   [x] Broadcast Detection Range: `2500m`
+-   [x] Line of Sight Detection Range: `1800m`
+-   [x] Retreat on
+    -   [x] No Weapon
+-   [x] Combat Range
+    -   [x] Chaingun: `1200m`
+    -   [x] Cannon: `4000m`

@@ -24,8 +24,10 @@
 
 				[WeaponSystem:APS-Weapons-D-1-1]
 
-				[Triggers:APS-Trigger-GrindDamage]
-				[Triggers:APS-Trigger-D-1-1-Retreat]
+				[Triggers:APS-Trigger-Retreat-Low-Health]
+				[Triggers:APS-Trigger-Retreat-No-Weapon]
+				[Triggers:APS-Trigger-Compromised]
+				[Triggers:APS-Trigger-D-1-1-Spawn-D-1-2]
 
 			</Description>
 

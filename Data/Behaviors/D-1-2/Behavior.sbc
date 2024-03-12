@@ -25,7 +25,9 @@
 
 				[WeaponSystem:APS-Weapons-D-1-2]
 
-				[Triggers:APS-Trigger-GrindDamage]
+				[Triggers:APS-Trigger-Retreat-No-Weapon]
+				[Triggers:APS-Trigger-Compromised]
+				[Triggers:APS-Trigger-Random-Ramming]
 
 			</Description>
 
