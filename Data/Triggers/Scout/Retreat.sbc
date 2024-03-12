@@ -41,21 +41,15 @@
 
 				[UseChatBroadcast:true]
 				[ChatData:APS-Scout-TriggerChat-Retreat-A]
-				[ChatData:APS-Scout-TriggerChat-Retreat-B]
-				[ChatData:APS-Scout-TriggerChat-Retreat-C]
-
-				[CreateKnownPlayerArea:true]
-				[KnownPlayerAreaRadius:3000]
-				[KnownPlayerAreaTimer:15]
-				[KnownPlayerAreaMaxSpawns:1]
-
-				[Retreat:true]
+				
 				[ChangeAntennaRanges:true]
-				[AntennaRangeChangeType:Decrease]
-				[AntennaRangeChangeAmount:150000]
+				[AntennaRangeChangeType:Set]
+				[AntennaRangeChangeAmount:1200]
 
 				[ChangeBehaviorSubclass:true]
 				[NewBehaviorSubclass:CargoShip]
+
+				[Retreat:true]
 
 			</Description>
 
@@ -80,57 +74,6 @@
 				[Color:White]
 
 				[ChatMessages:An attempt was detected to damage system property by entity "{PlayerName}".]
-				[BroadcastChatType:Chat]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Scout-TriggerChat-Retreat-B</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Chat]
-
-				[UseChat:true]
-				[StartsReady:true]
-
-				[IgnoreAntennaRequirement:true]
-				[SendToAllOnlinePlayers:true]
-
-				[Author:Scout]
-				[Color:White]
-
-				[ChatMessages:A restricted area has been created for subsequent inspection by the combat module.]
-				[BroadcastChatType:Chat]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Scout-TriggerChat-Retreat-C</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Chat]
-
-				[UseChat:true]
-				[StartsReady:true]
-
-				[IgnoreAntennaRequirement:true]
-				[SendToAllOnlinePlayers:true]
-
-				[Author:Scout]
-				[Color:White]
-
-				[GPSLabel:Restricted Area]	
-				[ChatMessages:{GPS}]
 				[BroadcastChatType:Chat]
 
 			</Description>

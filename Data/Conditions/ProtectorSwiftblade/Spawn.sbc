@@ -6,19 +6,27 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Manipulation-Common</SubtypeId>
+				<SubtypeId>APS-Protector-Swiftblade-Condition-Spawn</SubtypeId>
 			</Id>
 			<Description>
 
-				[MES Manipulation]
+				[MES Spawn Conditions]
 
-				[UseRivalAi:true]
-				[RivalAiReplaceRemoteControl:true]
-				[DisableDampeners:false]
+				[AtmosphericCargoShip:true]
+				[AtmosphericCargoShipChance:20]
+
+				[FactionOwner:APS]
+
+				[UseThreatLevelCheck:true]
+				[ThreatLevelCheckRange:1000]
+				[ThreatScoreMinimum:50]
+
+				[IgnoreCombatPhase:true]
 
 			</Description>
 
 		</EntityComponent>
 
+		
 	</EntityComponents>
 </Definitions>

@@ -6,52 +6,6 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-SpawnConditions-Scout</SubtypeId>
-			</Id>
-			<Description>
-
-				[MES Spawn Conditions]
-
-				[AtmosphericCargoShip:true]
-				[AtmosphericCargoShipChance:40]
-
-				[FactionOwner:APS]
-
-				[UseThreatLevelCheck:true]
-				[ThreatLevelCheckRange:1000]
-				[ThreatScoreMinimum:0]
-
-				[IgnoreCombatPhase:true]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-SpawnConditions-Easy</SubtypeId>
-			</Id>
-			<Description>
-
-				[MES Spawn Conditions]
-
-				[AtmosphericCargoShip:true]
-				[AtmosphericCargoShipChance:100]
-
-				[FactionOwner:APS]
-
-				[UseThreatLevelCheck:true]
-				[ThreatLevelCheckRange:1000]
-				[ThreatScoreMinimum:0]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
 				<SubtypeId>APS-PersistentSpawnConditions-Environment-2G</SubtypeId>
 			</Id>
 			<Description>

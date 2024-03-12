@@ -17,8 +17,7 @@
 				[AutopilotData:APS-Autopilot-Scout-A]
 				[SecondaryAutopilotData:APS-Autopilot-Scout-B]
 
-				[TargetData:APS-Target-Scout-A]
-				[OverrideTargetData:APS-Target-Scout-B]
+				[TargetData:APS-Target-Scout]
 
 				[EngageOnTargetLineOfSight:true]
 				[EngageOnWeaponActivation:true]
@@ -97,7 +96,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-Scout-A</SubtypeId>
+				<SubtypeId>APS-Target-Scout</SubtypeId>
 			</Id>
 			<Description>
 
@@ -133,43 +132,7 @@
 				[Owners:NPC]
 				[Relations:Enemy]
 
-				[GetTargetBy:ClosestDistance]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-Scout-B</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Target]
-
-				[UseCustomTargeting:true]
-				[Target:PlayerAndGrid]
-				[BlockTargets:Containers]
-				[BlockTargets:Power]
-				[BlockTargets:Thrusters]
-				[UseTargetRefresh:true]
-
-				[MaxDistance:5000]
-
-				[TimeUntilTargetAcquisition:10]
-				[TimeUntilNextEvaluation:3]
-
-				[MatchAllFilters:OutsideOfSafezone]
-				[MatchAllFilters:Owner]
-				[MatchAllFilters:Relation]
-				[MatchAllFilters:Powered]
-
-				[Owners:Player]
-				[Owners:NPC]
-				[Relations:Enemy]
-
-				[GetTargetBy:ClosestDistance]
+				[GetTargetBy:Random]
 
 			</Description>
 
