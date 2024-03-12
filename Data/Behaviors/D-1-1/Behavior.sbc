@@ -6,7 +6,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Behavior-Scout</SubtypeId>
+				<SubtypeId>APS-Behavior-D-1-1</SubtypeId>
 			</Id>
 			<Description>
 
@@ -14,18 +14,18 @@
 
 				[BehaviorName:Hunter]
 
-				[AutopilotData:APS-Autopilot-Scout-A]
-				[SecondaryAutopilotData:APS-Autopilot-Scout-B]
+				[AutopilotData:APS-Autopilot-D-1-1-A]
+				[SecondaryAutopilotData:APS-Autopilot-D-1-1-B]
 
-				[TargetData:APS-Target-Scout]
+				[TargetData:APS-Target-D-1-1]
 
 				[EngageOnTargetLineOfSight:true]
 				[EngageOnWeaponActivation:true]
 
-				[WeaponSystem:APS-Weapons-Scout]
+				[WeaponSystem:APS-Weapons-D-1-1]
 
 				[Triggers:APS-Trigger-GrindDamage]
-				[Triggers:APS-Scout-Trigger-Retreat]
+				[Triggers:APS-Trigger-D-1-1-Retreat]
 
 			</Description>
 
@@ -34,7 +34,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-Scout-A</SubtypeId>
+				<SubtypeId>APS-Autopilot-D-1-1-A</SubtypeId>
 			</Id>
 			<Description>
 
@@ -59,7 +59,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-Scout-B</SubtypeId>
+				<SubtypeId>APS-Autopilot-D-1-1-B</SubtypeId>
 			</Id>
 			<Description>
 
@@ -96,7 +96,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-Scout</SubtypeId>
+				<SubtypeId>APS-Target-D-1-1</SubtypeId>
 			</Id>
 			<Description>
 

@@ -6,7 +6,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Scout-Trigger-Retreat</SubtypeId>
+				<SubtypeId>APS-Trigger-D-1-1-Retreat</SubtypeId>
 			</Id>
 			<Description>
 
@@ -24,7 +24,7 @@
 				[MinCooldownMs:15000]
 				[MaxCooldownMs:15001]
 				[MaxActions:1]
-				[Actions:APS-Scout-TriggerAction-Retreat]
+				[Actions:APS-TriggerAction-D-1-1-Retreat]
 
 			</Description>
 
@@ -33,14 +33,11 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Scout-TriggerAction-Retreat</SubtypeId>
+				<SubtypeId>APS-TriggerAction-D-1-1-Retreat</SubtypeId>
 			</Id>
 			<Description>
 
 				[RivalAI Action]
-
-				[UseChatBroadcast:true]
-				[ChatData:APS-Scout-TriggerChat-Retreat-A]
 				
 				[ChangeAntennaRanges:true]
 				[AntennaRangeChangeType:Set]
@@ -50,31 +47,6 @@
 				[NewBehaviorSubclass:CargoShip]
 
 				[Retreat:true]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Scout-TriggerChat-Retreat-A</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Chat]
-
-				[UseChat:true]
-				[StartsReady:true]
-
-				[IgnoreAntennaRequirement:true]
-				[SendToAllOnlinePlayers:true]
-
-				[Author:Scout]
-				[Color:White]
-
-				[ChatMessages:An attempt was detected to damage system property by entity "{PlayerName}".]
-				[BroadcastChatType:Chat]
 
 			</Description>
 

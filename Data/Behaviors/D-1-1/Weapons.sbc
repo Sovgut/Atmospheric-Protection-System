@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
@@ -6,26 +6,25 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Protector-Swiftblade-Condition-Spawn</SubtypeId>
+				<SubtypeId>APS-Weapons-D-1-1</SubtypeId>
 			</Id>
 			<Description>
 
-				[MES Spawn Conditions]
+				[RivalAI Weapons]
 
-				[AtmosphericCargoShip:true]
+				[UseStaticGuns:true]
+				[MaxStaticWeaponRange:1200]
+				[WeaponMaxAngleFromTarget:20]
 
-				[FactionOwner:APS]
+				[UseBarrageFire:true]
+				[MaxFireRateForBarrageWeapons:12]
 
-				[UseThreatLevelCheck:true]
-				[ThreatLevelCheckRange:1000]
-				[ThreatScoreMinimum:50]
-
-				[IgnoreCombatPhase:true]
+				[UseAmmoReplenish:true]
+				[AmmoReplenishClipAmount:15]
+				[MaxAmmoReplenishments:10]
 
 			</Description>
-
 		</EntityComponent>
 
-		
 	</EntityComponents>
 </Definitions>

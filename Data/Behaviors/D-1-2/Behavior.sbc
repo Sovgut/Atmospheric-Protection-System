@@ -6,7 +6,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Behavior-Protector-Swiftblade</SubtypeId>
+				<SubtypeId>APS-Behavior-D-1-2</SubtypeId>
 			</Id>
 			<Description>
 
@@ -14,16 +14,16 @@
 
 				[BehaviorName:Hunter]
 
-				[AutopilotData:APS-Autopilot-Protector-Swiftblade-A]
-				[SecondaryAutopilotData:APS-Autopilot-Protector-Swiftblade-B]
+				[AutopilotData:APS-Autopilot-D-1-2-A]
+				[SecondaryAutopilotData:APS-Autopilot-D-1-2-B]
 
-				[TargetData:APS-Target-Protector-Swiftblade-A]
-				[OverrideTargetData:APS-Target-Protector-Swiftblade-B]
+				[TargetData:APS-Target-D-1-2-A]
+				[OverrideTargetData:APS-Target-D-1-2-B]
 
 				[EngageOnTargetLineOfSight:true]
 				[EngageOnWeaponActivation:true]
 
-				[WeaponSystem:APS-Weapons-Protector-Swiftblade]
+				[WeaponSystem:APS-Weapons-D-1-2]
 
 				[Triggers:APS-Trigger-GrindDamage]
 
@@ -34,7 +34,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-Protector-Swiftblade-A</SubtypeId>
+				<SubtypeId>APS-Autopilot-D-1-2-A</SubtypeId>
 			</Id>
 			<Description>
 
@@ -59,7 +59,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-Protector-Swiftblade-B</SubtypeId>
+				<SubtypeId>APS-Autopilot-D-1-2-B</SubtypeId>
 			</Id>
 			<Description>
 
@@ -96,7 +96,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-Protector-Swiftblade-A</SubtypeId>
+				<SubtypeId>APS-Target-D-1-2-A</SubtypeId>
 			</Id>
 			<Description>
 
@@ -135,7 +135,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-Protector-Swiftblade-B</SubtypeId>
+				<SubtypeId>APS-Target-D-1-2-B</SubtypeId>
 			</Id>
 			<Description>
 

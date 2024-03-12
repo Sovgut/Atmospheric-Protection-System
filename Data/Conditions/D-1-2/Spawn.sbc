@@ -2,10 +2,11 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
+
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Scout-Condition-Spawn</SubtypeId>
+				<SubtypeId>APS-SpawnCondition-D-1-2</SubtypeId>
 			</Id>
 			<Description>
 
@@ -17,12 +18,14 @@
 
 				[UseThreatLevelCheck:true]
 				[ThreatLevelCheckRange:1000]
-				[ThreatScoreMinimum:0]
+				[ThreatScoreMinimum:50]
 
 				[IgnoreCombatPhase:true]
 
 			</Description>
 
 		</EntityComponent>
+
+		
 	</EntityComponents>
 </Definitions>

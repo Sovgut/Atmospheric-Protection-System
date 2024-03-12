@@ -5,13 +5,13 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId>
-				<SubtypeId>APS-Easy-Protector-Swiftblade</SubtypeId>
+				<SubtypeId>APS-SpawnGroup-D-1-2</SubtypeId>
 			</Id>
 			<Description>
 
 				[Modular Encounters SpawnGroup]
 				[PersistentConditions:APS-PersistentSpawnConditions-Environment-1.4G]
-				[SpawnConditionsProfiles:APS-Protector-Swiftblade-Condition-Spawn]
+				[SpawnConditionsProfiles:APS-SpawnCondition-D-1-2]
 				[ManipulationProfiles:APS-Manipulation-Common]
 
 				[ReplenishSystems:true]
@@ -20,14 +20,14 @@
 			<IsPirate>true</IsPirate>
 			<Frequency>5.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="Protector Swiftblade">
+				<Prefab SubtypeId="Warden">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>25</Speed>
-					<Behaviour>APS-Behavior-Protector-Swiftblade</Behaviour>
+					<Behaviour>APS-Behavior-D-1-2</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
