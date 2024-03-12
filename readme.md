@@ -17,7 +17,6 @@
 -   [x] Threat Score: `0`
 -   [x] Combat Phase: `true`
 -   [x] Peace Phase: `true`
--   [x] Spawn Chance: `40%`
 -   [x] Broadcast Detection Range: `5000m`
 -   [x] Line of Sight Detection Range: `1800m`
 -   [x] Movement Detection Range: `2500m`
@@ -39,7 +38,6 @@
 -   [ ] Threat Score: `50`
 -   [ ] Combat Phase: `true`
 -   [ ] Peace Phase: `true`
--   [ ] Spawn Chance: `20%`
 -   [ ] Broadcast Detection Range: `2500m`
 -   [ ] Line of Sight Detection Range: `1800m`
 -   [ ] Combat Range
