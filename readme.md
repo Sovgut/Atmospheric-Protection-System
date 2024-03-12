@@ -1,3 +1,12 @@
+# Dependencies
+
+    - Modular Encounter System
+    - Weapon Core
+    - 模块化推进器 | Modular Thrusters
+    - Defense Shields
+    - Aryx Weapon Enterprises
+    - Recolorable Thrusters
+
 # Automatic Protection System (**APS**)
 
 > In a distant future, the faction known as `Automatic Protection System (APS)` embodies the concept of a fully automated defense system governed by an artificial intelligence developed by humanity. Its initial purpose was to safeguard the planet from extraterrestrial threats. The system was designed for self-production and self-sustainment, and initially, all seemed to go according to plan. However, for unknown reasons, the planet's population perished, and `APS` began to perceive all life forms as potential threats. Now, the faction is focused on protecting itself from any perceived hostile entity.
