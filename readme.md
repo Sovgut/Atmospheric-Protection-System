@@ -8,7 +8,7 @@
 
 ## Easy Encounters
 
-### _Scout_ (D-1-1)
+### _Scout_ (**D-1-1**)
 
 > In the backdrop of a distant future where human colonization of various worlds has become commonplace, the need for effective early detection of potential threats arose. Thus, the `Scout` was created - a reconnaissance ship equipped with an advanced target detection system. Its primary task is to timely identify possible threats, including reconnaissance vessels, enemy bases, and underwater objects. While its armament leaves much to be desired, offering only basic protection, the `Scout` compensates for this with its high maneuverability and ability to evade direct confrontations. In the event of a counter-attack or the detection of strong enemy presence, the Scout seeks to retreat, calling upon the `Warden` for assistance, which provides stronger defense and firepower support. Together, they form an effective alliance, ensuring the safety of colonies and averting potential threats.
 
@@ -29,7 +29,7 @@
     -   [ ] Less Broadcast Range
     -   [ ] Increased `Warden` spawn time
 
-### _Warden_ (D-1-2)
+### _Warden_ (**D-1-2**)
 
 > In the future, as human colonization expands across numerous worlds, the need arose to defend borders against potential threats. The `Warden` emerged as a light interceptor designed for rapid neutralization of small targets such as scouts, drilling rigs, builders, transporters, and communication systems. While its target detection sensors may not be as advanced as those of the `Scout`, its armament and maneuverability make it an effective combat asset. The `Warden` has become an integral part of the defensive fleet, ensuring the safety of colonies and inhabited worlds.
 
