@@ -5,7 +5,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Retreat-Low-Health</SubtypeId>
+				<SubtypeId>APS-Trigger-Remote-Control-Health</SubtypeId>
 			</Id>
 			<Description>
 				[RivalAI Trigger]
@@ -15,7 +15,7 @@
 				[Type:HealthPercentage]
 
 				[UseFailCondition:true]
-				[PercentageOfHealthRemaining:75]
+				[PercentageOfHealthRemaining:80]
 
 				[MaxActions:1]
 				[Actions:APS-Action-Retreat]

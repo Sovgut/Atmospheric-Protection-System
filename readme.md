@@ -31,7 +31,7 @@
 -   [x] Movement Detection Range: `2500m`
 -   [x] Movement Detection Score: `1000`
 -   [x] Retreat on
-    -   [x] Low Health (`75%`)
+    -   [x] Remote Control Health (`80%`)
     -   [x] No Weapon
 -   [x] Combat Range
     -   [x] Chaingun: `1200m`
