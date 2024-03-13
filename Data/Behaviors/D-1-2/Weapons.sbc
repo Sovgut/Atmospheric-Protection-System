@@ -2,27 +2,19 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
 				<SubtypeId>APS-Weapons-D-1-2</SubtypeId>
 			</Id>
 			<Description>
-
 				[RivalAI Weapons]
 
 				[UseStaticGuns:true]
 				[MaxStaticWeaponRange:4000]
-				[WeaponMaxAngleFromTarget:20]
-
-				[UseBarrageFire:true]
-				[MaxFireRateForBarrageWeapons:12]
 
 				[UseAmmoReplenish:true]
-
 			</Description>
 		</EntityComponent>
-
 	</EntityComponents>
 </Definitions>

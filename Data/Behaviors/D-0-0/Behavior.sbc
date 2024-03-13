@@ -2,44 +2,38 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Behavior-D-1-2</SubtypeId>
+				<SubtypeId>APS-Behavior-D-0-0</SubtypeId>
 			</Id>
 			<Description>
-
 				[RivalAI Behavior]
 
 				[BehaviorName:Hunter]
 
-				[AutopilotData:APS-Autopilot-D-1-2-A]
-				[SecondaryAutopilotData:APS-Autopilot-D-1-2-B]
+				[AutopilotData:APS-Autopilot-D-0-0-A]
+				[SecondaryAutopilotData:APS-Autopilot-D-0-0-B]
 
-				[TargetData:APS-Target-D-1-2-A]
-				[OverrideTargetData:APS-Target-D-1-2-B]
+				[TargetData:APS-Target-D-0-0]
 
 				[EngageOnTargetLineOfSight:true]
 				[EngageOnWeaponActivation:true]
 
-				[WeaponSystem:APS-Weapons-D-1-2]
+				[WeaponSystem:APS-Weapons-D-0-0]
 
+				[Triggers:APS-Trigger-Remote-Control-Health]
 				[Triggers:APS-Trigger-Retreat-No-Weapon]
 				[Triggers:APS-Trigger-Compromised]
-				[Triggers:APS-Trigger-Random-Ramming]
-
 			</Description>
-
 		</EntityComponent>
 
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-D-1-2-A</SubtypeId>
+				<SubtypeId>APS-Autopilot-D-0-0-A</SubtypeId>
 			</Id>
 			<Description>
-
 				[RivalAI Autopilot]
 
 				[WaypointTolerance:25]
@@ -53,26 +47,21 @@
 				[AllowStrafing:true]
 				[StrafeMinDurationMs:500]
 				[StrafeMaxDurationMs:1500]
-
 			</Description>
-
 		</EntityComponent>
 
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-D-1-2-B</SubtypeId>
+				<SubtypeId>APS-Autopilot-D-0-0-B</SubtypeId>
 			</Id>
 			<Description>
-
 				[RivalAI Autopilot]
 
-				[UseProjectileLeadPrediction:true]
-
 				[WaypointTolerance:40]
-				[IdealMinSpeed:40]
-				[IdealMaxSpeed:100]
-				[MaxSpeedTolerance:25]
+				[IdealMinSpeed:20]
+				[IdealMaxSpeed:60]
+				[MaxSpeedTolerance:10]
 				[SlowDownOnWaypointApproach:true]
 				[ExtraSlowDownDistance:500]
 
@@ -90,30 +79,22 @@
 				[CollisionEvasionWaypointDistance:200]
 				[CollisionFallEvasionWaypointDistance:300]
 				[CollisionEvasionResumeDistance:500]
-
 			</Description>
-
 		</EntityComponent>
 
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-D-1-2-A</SubtypeId>
+				<SubtypeId>APS-Target-D-0-0</SubtypeId>
 			</Id>
 			<Description>
-
 				[RivalAI Target]
 
 				[UseCustomTargeting:true]
 				[Target:Block]
-				[BlockTargets:Guns]
-				[BlockTargets:Turrets]
 				[BlockTargets:Power]
-				[BlockTargets:Antennas]
-				[BlockTargets:Containers]
-				[BlockTargets:Shields]
 
-				[MaxDistance:2500]
+				[MaxDistance:5000]
 
 				[TimeUntilTargetAcquisition:10]
 				[TimeUntilNextEvaluation:3]
@@ -124,52 +105,20 @@
 				[MatchAllFilters:Powered]
 
 				[MatchAnyFilters:Broadcasting]
+				[MatchAnyFilters:MovementScore]
 				[MatchAnyFilters:LineOfSight]
 
-				[NonBroadcastVisualRange:1800]
-				[MaxLineOfSight:1800]
-
-				[Owners:Player]
-				[Owners:NPC]
-				[Relations:Enemy]
-
-				[GetTargetBy:ClosestDistance]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-D-1-2-B</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Target]
-
-				[UseCustomTargeting:true]
-				[Target:PlayerAndGrid]
-
-				[MaxDistance:15000]
-
-				[TimeUntilTargetAcquisition:10]
-				[TimeUntilNextEvaluation:3]
-
-				[MatchAllFilters:OutsideOfSafezone]
-				[MatchAllFilters:Owner]
-				[MatchAllFilters:Relation]
-				[MatchAllFilters:Powered]
-				[MatchAllFilters:PlayerKnownLocation]
+				[NonBroadcastVisualRange:3000]
+				[MinMovementScore:1000]
+				[MaxMovementDetectableDistance:5000]
+				[MaxLineOfSight:3000]
 
 				[Owners:Player]
 				[Owners:NPC]
 				[Relations:Enemy]
 
 				[GetTargetBy:Random]
-
 			</Description>
-
 		</EntityComponent>
 	</EntityComponents>
 </Definitions>

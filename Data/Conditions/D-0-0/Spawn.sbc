@@ -5,21 +5,20 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Action-Defeat</SubtypeId>
+				<SubtypeId>APS-SpawnCondition-D-0-0</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Action]
-				
-				[EnableBlocks:true]
+				[MES Spawn Conditions]
 
-				[EnableBlockNames:Warfare Battery]
-				[EnableBlockStates:Off]
+				[AtmosphericCargoShip:true]
 
-				[EnableBlockNames:Small Battery]
-				[EnableBlockStates:Off]
-				
-				[EnableBlockNames:Small Warfare Reactor]
-				[EnableBlockStates:Off]
+				[FactionOwner:APS]
+
+				[UseThreatLevelCheck:true]
+				[ThreatLevelCheckRange:1000]
+				[ThreatScoreMinimum:0]
+
+				[IgnoreCombatPhase:true]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

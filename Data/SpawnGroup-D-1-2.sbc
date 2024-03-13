@@ -13,6 +13,8 @@
 				[SpawnConditionsProfiles:APS-SpawnCondition-D-1-2]
 				[ManipulationProfiles:APS-Manipulation-Common]
 				[ManipulationProfiles:APS-Manipulation-Armor]
+				[ManipulationProfiles:APS-Manipulation-Hydrogen-Thrusters]
+				[ManipulationProfiles:APS-Manipulation-Gyroscope]
 
 				[ReplenishSystems:true]
 			</Description>

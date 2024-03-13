@@ -105,11 +105,8 @@
 				[RivalAI Target]
 
 				[UseCustomTargeting:true]
-				[Target:PlayerAndGrid]
-				[BlockTargets:Containers]
+				[Target:Block]
 				[BlockTargets:Power]
-				[BlockTargets:Thrusters]
-				[UseTargetRefresh:true]
 
 				[MaxDistance:5000]
 

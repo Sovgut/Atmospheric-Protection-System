@@ -8,10 +8,10 @@
 				<SubtypeId>APS-SpawnCondition-D-1-1</SubtypeId>
 			</Id>
 			<Description>
-
 				[MES Spawn Conditions]
 
 				[AtmosphericCargoShip:true]
+				[AtmosphericCargoShipChance:75]
 
 				[FactionOwner:APS]
 
@@ -20,9 +20,7 @@
 				[ThreatScoreMinimum:0]
 
 				[IgnoreCombatPhase:true]
-
 			</Description>
-
 		</EntityComponent>
 	</EntityComponents>
 </Definitions>

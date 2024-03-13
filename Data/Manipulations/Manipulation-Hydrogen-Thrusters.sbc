@@ -5,22 +5,22 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Action-Defeat</SubtypeId>
+				<SubtypeId>APS-Manipulation-Hydrogen-Thrusters</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Action]
-				
-				[EnableBlocks:true]
+				[MES Manipulation]
 
-				[EnableBlockNames:Warfare Battery]
-				[EnableBlockStates:Off]
+				[UseBlockReplacer:true]
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
 
-				[EnableBlockNames:Small Battery]
-				[EnableBlockStates:Off]
-				
-				[EnableBlockNames:Small Warfare Reactor]
-				[EnableBlockStates:Off]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcHydroThrust:true]
+				[NpcHydroThrustPowerMultiply:0]
+				[NpcHydroThrustForceMultiply:2]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>
 </Definitions>
+
+

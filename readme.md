@@ -2,7 +2,6 @@
 
     - Modular Encounter System
     - Weapon Core
-    - 模块化推进器 | Modular Thrusters
     - Defense Shields
     - Aryx Weapon Enterprises
     - Recolorable Thrusters
@@ -17,6 +16,26 @@
 
 ## Easy Encounters
 
+### _Rogue Sentry_ (**D-0-0**)
+
+> In the world of the future, beyond the control of the main artificial intelligence of the Automatic Protection System (APS) faction, there exists a lone drone known as the "Rogue Sentry". Its sole purpose is to seek out and destroy any sources of energy that it deems a threat to its existence. Doomed to an endless search, it roams through desolate landscapes, hunting for any signs of energy. Though its weaponry may be weak, it is still capable of inflicting harm upon those who dare to stand in its way. Cut off from communication with Core, the Rogue Sentry is an obsessed hunter, wandering in relentless darkness, posing a threat to anything that crosses its path.
+
+#### Features
+
+-   [x] Threat Score: `0`
+-   [x] Spawn Chance: `100%`
+-   [x] Combat Phase: `true`
+-   [x] Peace Phase: `true`
+-   [x] Broadcast Detection Range: `5000m`
+-   [x] Line of Sight Detection Range: `3000m`
+-   [x] Movement Detection Range: `5000m`
+-   [x] Movement Detection Score: `1000`
+-   [x] Retreat on
+    -   [x] Remote Control Health (`80%`)
+    -   [x] No Weapon
+-   [x] Combat Range
+    -   [x] PD Laser: `500m`
+
 ### _Scout_ (**D-1-1**)
 
 > In the backdrop of a distant future where human colonization of various worlds has become commonplace, the need for effective early detection of potential threats arose. Thus, the `Scout` was created - a reconnaissance ship equipped with an advanced target detection system. Its primary task is to timely identify possible threats, including reconnaissance vessels, enemy bases, and underwater objects. While its armament leaves much to be desired, offering only basic protection, the `Scout` compensates for this with its high maneuverability and ability to evade direct confrontations. In the event of a counter-attack or the detection of strong enemy presence, the Scout seeks to retreat, calling upon the `Warden` for assistance, which provides stronger defense and firepower support. Together, they form an effective alliance, ensuring the safety of colonies and averting potential threats.
@@ -24,6 +43,7 @@
 #### Features
 
 -   [x] Threat Score: `0`
+-   [x] Spawn Chance: `75%`
 -   [x] Combat Phase: `true`
 -   [x] Peace Phase: `true`
 -   [x] Broadcast Detection Range: `5000m`
@@ -46,6 +66,7 @@
 #### Features
 
 -   [x] Threat Score: `50`
+-   [x] Spawn Chance: `50%`
 -   [x] Combat Phase: `true`
 -   [x] Peace Phase: `true`
 -   [x] Broadcast Detection Range: `2500m`

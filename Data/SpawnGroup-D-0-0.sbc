@@ -5,30 +5,30 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId>
-				<SubtypeId>APS-SpawnGroup-D-1-1</SubtypeId>
+				<SubtypeId>APS-SpawnGroup-D-0-0</SubtypeId>
 			</Id>
 			<Description>
 				[Modular Encounters SpawnGroup]
 				[PersistentConditions:APS-PersistentSpawnConditions-Environment-1.4G]
-				[SpawnConditionsProfiles:APS-SpawnCondition-D-1-1]
+
+				[SpawnConditionsProfiles:APS-SpawnCondition-D-0-0]
 				[ManipulationProfiles:APS-Manipulation-Common]
-				[ManipulationProfiles:APS-Manipulation-Armor]
 				[ManipulationProfiles:APS-Manipulation-Hydrogen-Thrusters]
 				[ManipulationProfiles:APS-Manipulation-Gyroscope]
 
 				[ReplenishSystems:true]
 			</Description>
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>10.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="Scout">
+				<Prefab SubtypeId="Rogue Sentry">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>25</Speed>
-					<Behaviour>APS-Behavior-D-1-1</Behaviour>
+					<Behaviour>APS-Behavior-D-0-0</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>

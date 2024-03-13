@@ -5,22 +5,17 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Action-Defeat</SubtypeId>
+				<SubtypeId>APS-Manipulation-Gyroscope</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Action]
-				
-				[EnableBlocks:true]
+				[MES Manipulation]
 
-				[EnableBlockNames:Warfare Battery]
-				[EnableBlockStates:Off]
-
-				[EnableBlockNames:Small Battery]
-				[EnableBlockStates:Off]
-				
-				[EnableBlockNames:Small Warfare Reactor]
-				[EnableBlockStates:Off]
+				[UseBlockReplacer:true]
+				[SetNpcGyroscopeMultiplier:true]
+				[NpcGyroscopeMultiplier:2]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>
 </Definitions>
+
+

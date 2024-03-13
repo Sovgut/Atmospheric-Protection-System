@@ -2,17 +2,16 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
 				<SubtypeId>APS-SpawnCondition-D-1-2</SubtypeId>
 			</Id>
 			<Description>
-
 				[MES Spawn Conditions]
 
 				[AtmosphericCargoShip:true]
+				[AtmosphericCargoShipChance:50]
 
 				[FactionOwner:APS]
 
@@ -21,11 +20,7 @@
 				[ThreatScoreMinimum:50]
 
 				[IgnoreCombatPhase:true]
-
 			</Description>
-
 		</EntityComponent>
-
-		
 	</EntityComponents>
 </Definitions>
