@@ -2,14 +2,12 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<EntityComponents>
-
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
 				<SubtypeId>APS-Behavior-D-1-1</SubtypeId>
 			</Id>
 			<Description>
-
 				[RivalAI Behavior]
 
 				[BehaviorName:Hunter]
@@ -27,114 +25,9 @@
 				[Triggers:APS-Trigger-Remote-Control-Health]
 				[Triggers:APS-Trigger-Retreat-No-Weapon]
 				[Triggers:APS-Trigger-Compromised]
+				[Triggers:APS-Trigger-Boring]
 				[Triggers:APS-Trigger-D-1-1-Spawn-D-1-2]
-
 			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-D-1-1-A</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Autopilot]
-
-				[WaypointTolerance:25]
-				[IdealMinSpeed:10]
-				[IdealMaxSpeed:20]
-				[MaxSpeedTolerance:5]
-				[SlowDownOnWaypointApproach:true]
-				[ExtraSlowDownDistance:150]
-				[IdealPlanetAltitude:300]
-
-				[AllowStrafing:true]
-				[StrafeMinDurationMs:500]
-				[StrafeMaxDurationMs:1500]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Autopilot-D-1-1-B</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Autopilot]
-
-				[UseProjectileLeadPrediction:true]
-
-				[WaypointTolerance:40]
-				[IdealMinSpeed:40]
-				[IdealMaxSpeed:100]
-				[MaxSpeedTolerance:25]
-				[SlowDownOnWaypointApproach:true]
-				[ExtraSlowDownDistance:500]
-
-				[EngageDistancePlanet:1500]
-				[DisengageDistancePlanet:2000]
-
-				[AllowStrafing:true]
-				[StrafeMinCooldownMs:1000]
-				[StrafeMaxCooldownMs:3000]
-				[StrafeDistanceCutOff:300]
-
-				[StrafeMinimumTargetDistance:500]
-
-				[UseVelocityCollisionEvasion:true]
-				[CollisionEvasionWaypointDistance:200]
-				[CollisionFallEvasionWaypointDistance:300]
-				[CollisionEvasionResumeDistance:500]
-
-			</Description>
-
-		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-D-1-1</SubtypeId>
-			</Id>
-			<Description>
-
-				[RivalAI Target]
-
-				[UseCustomTargeting:true]
-				[Target:Block]
-				[BlockTargets:Power]
-
-				[MaxDistance:5000]
-
-				[TimeUntilTargetAcquisition:10]
-				[TimeUntilNextEvaluation:3]
-
-				[MatchAllFilters:OutsideOfSafezone]
-				[MatchAllFilters:Owner]
-				[MatchAllFilters:Relation]
-				[MatchAllFilters:Powered]
-
-				[MatchAnyFilters:Broadcasting]
-				[MatchAnyFilters:MovementScore]
-				[MatchAnyFilters:LineOfSight]
-
-				[NonBroadcastVisualRange:1800]
-				[MinMovementScore:1000]
-				[MaxMovementDetectableDistance:2500]
-				[MaxLineOfSight:1800]
-
-				[Owners:Player]
-				[Owners:NPC]
-				[Relations:Enemy]
-
-				[GetTargetBy:Random]
-
-			</Description>
-
 		</EntityComponent>
 	</EntityComponents>
 </Definitions>

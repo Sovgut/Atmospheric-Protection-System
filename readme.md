@@ -23,11 +23,11 @@
 #### Features
 
 -   [x] Threat Score: `0`
--   [x] Spawn Chance: `100%`
+-   [x] Spawn Cooldown: `15min`-`60min`
 -   [x] Combat Phase: `true`
 -   [x] Peace Phase: `true`
--   [x] Line of Sight Detection Range: `3000m`
--   [x] Movement Detection Range: `5000m`
+-   [x] Line of Sight Detection Range: `1000m`
+-   [x] Movement Detection Range: `3000m`
 -   [x] Movement Detection Score: `1000`
 -   [x] Retreat on
     -   [x] Remote Control Health (`80%`)

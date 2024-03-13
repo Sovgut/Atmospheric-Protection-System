@@ -11,7 +11,6 @@
 				[RivalAI Trigger]
 
 				[UseTrigger:true]
-				[StartsReady:true]
 				[Type:HealthPercentage]
 
 				[UseFailCondition:true]

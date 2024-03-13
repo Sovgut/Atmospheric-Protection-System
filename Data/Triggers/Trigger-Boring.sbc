@@ -5,17 +5,20 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Manipulation-Gyroscope</SubtypeId>
+				<SubtypeId>APS-Trigger-Boring</SubtypeId>
 			</Id>
 			<Description>
-				[MES Manipulation]
+				[RivalAI Trigger]
 
-				[UseBlockReplacer:true]
-				[SetNpcGyroscopeMultiplier:true]
-				[NpcGyroscopeMultiplier:2]
+				[UseTrigger:true]
+				[Type:Timer]
+
+				[MinCooldownMs:300000]
+				[MaxCooldownMs:1200000]
+
+				[MaxActions:1]
+				[Actions:APS-Action-Retreat]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>
 </Definitions>
-
-

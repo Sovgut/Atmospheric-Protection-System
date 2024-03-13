@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Autopilot-D-1-1-A</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Autopilot]
+
+				[WaypointTolerance:25]
+				[IdealMinSpeed:10]
+				[IdealMaxSpeed:20]
+				[MaxSpeedTolerance:5]
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:150]
+				[IdealPlanetAltitude:300]
+
+				[AllowStrafing:true]
+				[StrafeMinDurationMs:500]
+				[StrafeMaxDurationMs:1500]
+			</Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Autopilot-D-1-1-B</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Autopilot]
+
+				[UseProjectileLeadPrediction:true]
+
+				[WaypointTolerance:40]
+				[IdealMinSpeed:40]
+				[IdealMaxSpeed:100]
+				[MaxSpeedTolerance:25]
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:500]
+
+				[EngageDistancePlanet:1500]
+				[DisengageDistancePlanet:2000]
+
+				[AllowStrafing:true]
+				[StrafeMinCooldownMs:1000]
+				[StrafeMaxCooldownMs:3000]
+				[StrafeDistanceCutOff:300]
+
+				[StrafeMinimumTargetDistance:500]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

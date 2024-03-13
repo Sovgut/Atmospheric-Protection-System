@@ -9,17 +9,18 @@
 			</Id>
 			<Description>
 				[Modular Encounters SpawnGroup]
+
 				[PersistentConditions:APS-PersistentSpawnConditions-Environment-1.4G]
 				[SpawnConditionsProfiles:APS-SpawnCondition-D-1-2]
+				
 				[ManipulationProfiles:APS-Manipulation-Common]
-				[ManipulationProfiles:APS-Manipulation-Armor]
 				[ManipulationProfiles:APS-Manipulation-Hydrogen-Thrusters]
-				[ManipulationProfiles:APS-Manipulation-Gyroscope]
+				[ManipulationProfiles:APS-Manipulation-Armor]
 
 				[ReplenishSystems:true]
 			</Description>
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>1.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="Warden">
 					<Position>

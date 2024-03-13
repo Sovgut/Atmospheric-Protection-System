@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Target-D-1-2-A</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Target]
+
+				[UseCustomTargeting:true]
+				[Target:Block]
+				[BlockTargets:Guns]
+				[BlockTargets:Turrets]
+				[BlockTargets:Power]
+				[BlockTargets:Antennas]
+				[BlockTargets:Containers]
+				[BlockTargets:Shields]
+
+				[MaxDistance:2500]
+
+				[TimeUntilTargetAcquisition:10]
+				[TimeUntilNextEvaluation:3]
+
+				[MatchAllFilters:OutsideOfSafezone]
+				[MatchAllFilters:Owner]
+				[MatchAllFilters:Relation]
+				[MatchAllFilters:Powered]
+
+				[MatchAnyFilters:Broadcasting]
+				[MatchAnyFilters:LineOfSight]
+
+				[NonBroadcastVisualRange:1800]
+				[MaxLineOfSight:1800]
+
+				[Owners:Player]
+				[Owners:NPC]
+				[Relations:Enemy]
+
+				[GetTargetBy:ClosestDistance]
+
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Target-D-1-2-B</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Target]
+
+				[UseCustomTargeting:true]
+				[Target:PlayerAndGrid]
+
+				[MaxDistance:15000]
+
+				[TimeUntilTargetAcquisition:10]
+				[TimeUntilNextEvaluation:3]
+
+				[MatchAllFilters:OutsideOfSafezone]
+				[MatchAllFilters:Owner]
+				[MatchAllFilters:Relation]
+				[MatchAllFilters:Powered]
+				[MatchAllFilters:PlayerKnownLocation]
+
+				[Owners:Player]
+				[Owners:NPC]
+				[Relations:Enemy]
+
+				[GetTargetBy:Random]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

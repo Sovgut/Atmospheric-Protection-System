@@ -11,11 +11,7 @@
 				[RivalAI Trigger]
 
 				[UseTrigger:true]
-				[StartsReady:true]
 				[Type:Compromised]
-
-				[MinCooldownMs:15000]
-				[MaxCooldownMs:15001]
 
 				[MaxActions:-1]
 				[ActionExecution:all]

@@ -10,7 +10,16 @@
 			<Description>
 				[MES Spawn Conditions]
 
-				[AtmosphericCargoShip:true]
+				[DroneEncounter:true]
+
+				[MinimumPlayerTime:900]
+				[MaximumPlayerTime:3600]
+
+				[MinDroneDistance:1500]
+				[MaxDroneDistance:3000]
+
+				[MinDroneAltitude:100]
+				[MaxDroneAltitude:300]
 
 				[FactionOwner:APS]
 

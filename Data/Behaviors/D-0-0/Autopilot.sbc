@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Autopilot-D-0-0-A</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Autopilot]
+
+				[WaypointTolerance:25]
+				[IdealMinSpeed:10]
+				[IdealMaxSpeed:20]
+				[MaxSpeedTolerance:5]
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:150]
+
+				[IdealPlanetAltitude:100]
+				[MinimumPlanetAltitude:20]
+				[AltitudeTolerance:10]
+			</Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Autopilot-D-0-0-B</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Autopilot]
+
+				[WaypointTolerance:40]
+				[IdealMinSpeed:20]
+				[IdealMaxSpeed:60]
+				[MaxSpeedTolerance:10]
+
+				[EngageDistancePlanet:500]
+				[DisengageDistancePlanet:1000]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

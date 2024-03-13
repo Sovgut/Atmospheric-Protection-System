@@ -10,6 +10,7 @@
 			<Description>
 				[MES Manipulation]
 
+				[UseBlockReplacer:false]
 				[OverrideBlockDamageModifier:true]
 				[BlockDamageModifier:25]
 				[GridsAreEditable:false]
