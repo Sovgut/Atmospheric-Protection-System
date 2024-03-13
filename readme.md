@@ -26,7 +26,6 @@
 -   [x] Spawn Chance: `100%`
 -   [x] Combat Phase: `true`
 -   [x] Peace Phase: `true`
--   [x] Broadcast Detection Range: `5000m`
 -   [x] Line of Sight Detection Range: `3000m`
 -   [x] Movement Detection Range: `5000m`
 -   [x] Movement Detection Score: `1000`

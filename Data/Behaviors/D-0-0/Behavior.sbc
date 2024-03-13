@@ -94,7 +94,7 @@
 				[Target:Block]
 				[BlockTargets:Power]
 
-				[MaxDistance:5000]
+				[MaxDistance:3000]
 
 				[TimeUntilTargetAcquisition:10]
 				[TimeUntilNextEvaluation:3]
