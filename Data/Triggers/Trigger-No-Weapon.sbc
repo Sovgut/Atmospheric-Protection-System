@@ -11,10 +11,15 @@
 				[RivalAI Trigger]
 
 				[UseTrigger:true]
+				[StartsReady:true]
 				[Type:NoWeapon]
 
-				[MaxActions:1]
+				[MinCooldownMs:10000]
+				[MaxCooldownMs:10001]
+
+				[MaxActions:2]
 				[Actions:APS-Action-Retreat]
+				[Actions:APS-Action-Remove-Known-Player-Area]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

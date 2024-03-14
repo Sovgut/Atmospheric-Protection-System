@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Action-Echo</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Action]
+				
+				[UseChatBroadcast:true]
+      			[ChatData:APS-Chat-Echo]
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Chat-Echo</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Chat]
+				
+				[UseChat:true]
+				[StartsReady:true]
+				
+				[Author:Echo]
+				[Color:Green]
+				
+				[ChatMessages:Action triggered]
+				[BroadcastChatType:Chat]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

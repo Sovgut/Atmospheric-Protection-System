@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>APS-Is-Not-Retreat</SubtypeId>
+      </Id>
+      <Description>
+      	[RivalAI Condition]
+      
+      	[UseConditions:true]
+		    [UseFailCondition:true]
+		
+		    [CheckTrueBooleans:true]
+      	[TrueBooleans:APS-Variable-Is-Retreat]
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

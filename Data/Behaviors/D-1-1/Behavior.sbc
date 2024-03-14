@@ -22,11 +22,13 @@
 
 				[WeaponSystem:APS-Weapons-D-1-1]
 
-				[Triggers:APS-Trigger-Remote-Control-Health]
 				[Triggers:APS-Trigger-Retreat-No-Weapon]
+				[Triggers:APS-Trigger-Known-Player-Area]
 				[Triggers:APS-Trigger-Compromised]
-				[Triggers:APS-Trigger-Boring]
-				[Triggers:APS-Trigger-D-1-1-Spawn-D-1-2]
+				[Triggers:APS-Trigger-Damaged]
+				[Triggers:APS-Trigger-Lost-Target]
+				[Triggers:APS-Trigger-To-Despawn]
+				[Triggers:APS-Trigger-Acquired-Target]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

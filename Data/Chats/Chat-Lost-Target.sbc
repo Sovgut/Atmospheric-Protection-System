@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Chat-Lost-Target</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Chat]
+				
+				[UseChat:true]
+				[StartsReady:true]
+				[BroadcastRandomly:true]
+				
+				[Author:{GridName}]
+				[Color:Red]
+
+				[IgnoreAntennaRequirement:true]
+				[IgnoredAntennaRangeOverride:6000]
+				
+				[ChatMessages:No activity detected, returning to its route]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:All clear, resuming patrol route]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Area clear, proceeding along path]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:No signs of activity, continuing route]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:No activity observed, returning to assigned path]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Quiet zone, reverting back to designated route]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:No anomalies detected, resuming course]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Area secure, proceeding with route]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:No unusual activity, returning to designated path]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:No disturbances noted, continuing patrol route]
+				[BroadcastChatType:Chat]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

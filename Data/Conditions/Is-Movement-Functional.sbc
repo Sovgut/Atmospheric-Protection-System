@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>APS-Is-Movement-Functional</SubtypeId>
+      </Id>
+      <Description>
+      		[RivalAI Condition]
+      
+      		[UseConditions:true]
+
+		    [UseRequiredFunctionalBlocks:true]
+			[RequiredAllFunctionalBlockNames:Thruster]
+			[RequiredAllFunctionalBlockNames:Tank]
+
+			[RequiredAnyFunctionalBlockNames:Energy]
+			[RequiredAnyFunctionalBlockNames:Energy Producer]
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

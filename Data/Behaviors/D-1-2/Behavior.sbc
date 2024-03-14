@@ -15,8 +15,7 @@
 				[AutopilotData:APS-Autopilot-D-1-2-A]
 				[SecondaryAutopilotData:APS-Autopilot-D-1-2-B]
 
-				[TargetData:APS-Target-D-1-2-A]
-				[OverrideTargetData:APS-Target-D-1-2-B]
+				[TargetData:APS-Target-D-1-2]
 
 				[EngageOnTargetLineOfSight:true]
 				[EngageOnWeaponActivation:true]
@@ -25,7 +24,9 @@
 
 				[Triggers:APS-Trigger-Retreat-No-Weapon]
 				[Triggers:APS-Trigger-Compromised]
-				[Triggers:APS-Trigger-Boring]
+				[Triggers:APS-Trigger-Lost-Target]
+				[Triggers:APS-Trigger-To-Despawn]
+				[Triggers:APS-Trigger-Acquired-Target]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

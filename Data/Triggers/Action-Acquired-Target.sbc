@@ -5,19 +5,13 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Boring</SubtypeId>
+				<SubtypeId>APS-Action-Acquired-Target</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Trigger]
+				[RivalAI Action]
 
-				[UseTrigger:true]
-				[Type:Timer]
-
-				[MinCooldownMs:300000]
-				[MaxCooldownMs:1200000]
-
-				[MaxActions:1]
-				[Actions:APS-Action-Retreat]
+				[UseChatBroadcast:true]
+      			[ChatData:APS-Chat-Acquired-Target]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

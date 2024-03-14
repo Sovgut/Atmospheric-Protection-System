@@ -5,18 +5,20 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Compromised</SubtypeId>
+				<SubtypeId>APS-Trigger-Damaged</SubtypeId>
 			</Id>
 			<Description>
 				[RivalAI Trigger]
 
 				[UseTrigger:true]
-				[Type:Compromised]
+				[Type:Damage]
+
+				[DamageTypes:Any]
+
+				[Conditions:APS-Is-Not-Movement-Functional]
 
 				[MaxActions:2]
-				[ActionExecution:all]
-				[Actions:APS-Action-Disable-Armor]
-				[Actions:APS-Action-Defeat]
+				[Actions:APS-Action-Retreat]
 				[Actions:APS-Action-Remove-Known-Player-Area]
 			</Description>
 		</EntityComponent>

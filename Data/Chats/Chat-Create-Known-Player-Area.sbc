@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Chat-Create-Known-Player-Area</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Chat]
+				
+				[UseChat:true]
+				[StartsReady:true]
+				[BroadcastRandomly:true]
+				
+				[Author:{GridName}]
+				[Color:Red]
+
+				[IgnoreAntennaRequirement:true]
+				[IgnoredAntennaRangeOverride:6000]
+				
+				[ChatMessages:Unauthorized presence detected, initiating restricted zone for investigation]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Intruder detected, establishing restricted area for security assessment]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Potential threat identified, setting up restricted zone for closer examination]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Hostile entity detected, cordoning off area for inspection by combat drone]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Security breach detected, implementing restricted zone for further investigation]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Unidentified object detected, establishing restricted area for security purposes]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Alert! Intrusion detected, creating restricted zone for thorough examination]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Suspicious activity detected, initiating restricted area for security assessment]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Security protocol initiated, establishing restricted zone for threat evaluation]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Unauthorized presence detected, setting up restricted area for immediate investigation]
+				[BroadcastChatType:Chat]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

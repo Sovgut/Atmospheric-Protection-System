@@ -5,19 +5,13 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Compromised</SubtypeId>
+				<SubtypeId>APS-Action-Lost-Target</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Trigger]
+				[RivalAI Action]
 
-				[UseTrigger:true]
-				[Type:Compromised]
-
-				[MaxActions:2]
-				[ActionExecution:all]
-				[Actions:APS-Action-Disable-Armor]
-				[Actions:APS-Action-Defeat]
-				[Actions:APS-Action-Remove-Known-Player-Area]
+				[UseChatBroadcast:true]
+      			[ChatData:APS-Chat-Lost-Target]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

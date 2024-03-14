@@ -5,19 +5,19 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Compromised</SubtypeId>
+				<SubtypeId>APS-Trigger-To-Despawn</SubtypeId>
 			</Id>
 			<Description>
 				[RivalAI Trigger]
 
 				[UseTrigger:true]
-				[Type:Compromised]
+				[Type:Timer]
 
-				[MaxActions:2]
-				[ActionExecution:all]
-				[Actions:APS-Action-Disable-Armor]
-				[Actions:APS-Action-Defeat]
-				[Actions:APS-Action-Remove-Known-Player-Area]
+				[MinCooldownMs:300000]
+				[MaxCooldownMs:1200000]
+
+				[MaxActions:1]
+				[Actions:APS-Action-To-Despawn]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Chat-Acquired-Target</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Chat]
+				
+				[UseChat:true]
+				[StartsReady:true]
+				[BroadcastRandomly:true]
+				
+				[Author:{GridName}]
+				[Color:Red]
+
+				[IgnoreAntennaRequirement:true]
+				[IgnoredAntennaRangeOverride:6000]
+				
+				[ChatMessages:Acquired target, engaging now]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Target locked, initiating engagement]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Confirmed target, commencing attack]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Enemy acquired, engaging hostile]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Locked onto target, engaging immediately]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Hostile detected, engaging now]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Engaging target, weapons activated]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Target acquired, engaging with full force]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Enemy in sight, initiating attack sequence]
+				[BroadcastChatType:Chat]
+
+				[ChatMessages:Threat detected, engaging target]
+				[BroadcastChatType:Chat]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

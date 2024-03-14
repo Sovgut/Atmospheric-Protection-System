@@ -49,7 +49,7 @@
 -   [x] Line of Sight Detection Range: `1800m`
 -   [x] Movement Detection Range: `2500m`
 -   [x] Movement Detection Score: `1000`
--   [x] Retreat on
+-   [x] Retreat On
     -   [x] Remote Control Health (`80%`)
     -   [x] No Weapon
 -   [x] Combat Range
@@ -70,7 +70,7 @@
 -   [x] Peace Phase: `true`
 -   [x] Broadcast Detection Range: `2500m`
 -   [x] Line of Sight Detection Range: `1800m`
--   [x] Retreat on
+-   [x] Retreat On
     -   [x] No Weapon
 -   [x] Combat Range
     -   [x] Chaingun: `1200m`
