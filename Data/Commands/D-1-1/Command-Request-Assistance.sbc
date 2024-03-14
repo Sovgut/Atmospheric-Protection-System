@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>APS-Command-D-1-1-Request-Assistance</SubtypeId>
+		</Id>
+		<Description>
+			[RivalAI Command]
+			
+			[CommandCode:D-1-1-Request-Assistance]
+			[SendTargetEntityId:true]
+			[SendDamagerEntityId:true]
+			[SingleRecipient:false]
+			[MatchSenderReceiverOwners:true]
+			[IgnoreAntennaRequirement:true]
+			[IgnoreReceiverAntennaRequirement:true]
+			[Radius:21000]
+		</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

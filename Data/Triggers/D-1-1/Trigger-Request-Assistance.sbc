@@ -5,20 +5,25 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Retreat-No-Weapon</SubtypeId>
+				<SubtypeId>APS-Trigger-D-1-1-Request-Assistance</SubtypeId>
 			</Id>
 			<Description>
 				[RivalAI Trigger]
 
 				[UseTrigger:true]
+				[Type:Damage]
+
+				[DamageTypes:Any]
+				[ExcludedDamageTypes:Drill]
+				[ExcludedDamageTypes:Grind]
+				[ExcludedDamageTypes:Environment]
+
+				[MinCooldownMs:60000]
+				[MaxCooldownMs:120000]
 				[StartsReady:true]
-				[Type:NoWeapon]
+				[MaxActions:-1]
 
-				[MinCooldownMs:10000]
-				[MaxCooldownMs:10001]
-
-				[MaxActions:1]
-				[Actions:APS-Action-Retreat]
+				[Actions:APS-Action-D-1-1-Request-Assistance]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

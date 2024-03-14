@@ -5,20 +5,16 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Retreat-No-Weapon</SubtypeId>
+				<SubtypeId>APS-Action-D-1-2-Request-Assistance-From-D-1-1</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Trigger]
+				[RivalAI Action]
 
-				[UseTrigger:true]
-				[StartsReady:true]
-				[Type:NoWeapon]
+				[SwitchToReceivedTarget:true]
+				[InheritLastAttackerFromCommand:true]
 
-				[MinCooldownMs:10000]
-				[MaxCooldownMs:10001]
-
-				[MaxActions:1]
-				[Actions:APS-Action-Retreat]
+				[UseChatBroadcast:true]
+      			[ChatData:APS-Chat-D-1-2-Target-Received]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

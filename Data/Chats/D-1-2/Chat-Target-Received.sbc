@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Chat-D-1-2-Target-Received</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Chat]
+				
+				[UseChat:true]
+				[StartsReady:true]
+				[BroadcastRandomly:true]
+				
+				[Author:{GridName}]
+				[Color:Red]
+
+				[IgnoreAntennaRequirement:true]
+				[IgnoredAntennaRangeOverride:6000]
+				
+				[ChatMessages:Target Received]
+				[BroadcastChatType:Chat]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

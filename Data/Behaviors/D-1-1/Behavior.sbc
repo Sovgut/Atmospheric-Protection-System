@@ -23,12 +23,12 @@
 				[WeaponSystem:APS-Weapons-D-1-1]
 
 				[Triggers:APS-Trigger-Retreat-No-Weapon]
-				[Triggers:APS-Trigger-Known-Player-Area]
 				[Triggers:APS-Trigger-Compromised]
 				[Triggers:APS-Trigger-Damaged]
 				[Triggers:APS-Trigger-Lost-Target]
 				[Triggers:APS-Trigger-To-Despawn]
 				[Triggers:APS-Trigger-Acquired-Target]
+				[Triggers:APS-Trigger-D-1-1-Request-Assistance]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

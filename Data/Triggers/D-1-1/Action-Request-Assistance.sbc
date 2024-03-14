@@ -5,23 +5,16 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Trigger-Known-Player-Area</SubtypeId>
+				<SubtypeId>APS-Action-D-1-1-Request-Assistance</SubtypeId>
 			</Id>
 			<Description>
-				[RivalAI Trigger]
+				[RivalAI Action]
+				
+				[BroadcastCommandProfiles:true]
+				[CommandProfileIds:APS-Command-D-1-1-Request-Assistance]
 
-				[UseTrigger:true]
-				[Type:Damage]
-
-				[DamageTypes:Any]
-				[ExcludedDamageTypes:Environment]
-				[ExcludedDamageTypes:Grind]
-				[ExcludedDamageTypes:Drill]
-
-				[Conditions:APS-Is-Not-Retreat]
-
-				[MaxActions:1]
-				[Actions:APS-Action-Create-Known-Player-Area]
+				[UseChatBroadcast:true]
+      			[ChatData:APS-Chat-D-1-1-Create-Known-Player-Area]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

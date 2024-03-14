@@ -5,20 +5,15 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Target-D-1-2</SubtypeId>
+				<SubtypeId>APS-Target-D-1-2-A</SubtypeId>
 			</Id>
 			<Description>
 				[RivalAI Target]
 
 				[UseCustomTargeting:true]
-				[Target:Block]
-				[BlockTargets:Guns]
-				[BlockTargets:Turrets]
-				[BlockTargets:Power]
-				[BlockTargets:Containers]
-				[BlockTargets:Shields]
+				[Target:PlayerAndGrid]
 
-				[MaxDistance:5000]
+				[MaxDistance:3000]
 
 				[TimeUntilTargetAcquisition:10]
 				[TimeUntilNextEvaluation:3]
@@ -31,13 +26,39 @@
 				[MatchAnyFilters:LineOfSight]
 				[MatchAnyFilters:PlayerKnownLocation]
 
+				[NonBroadcastVisualRange:1800]
 				[MaxLineOfSight:1800]
 
 				[Owners:Player]
 				[Owners:NPC]
 				[Relations:Enemy]
 
-				[GetTargetBy:ClosestDistance]
+				[GetTargetBy:HighestTargetValue]
+			</Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Target-D-1-2-B</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Target]
+
+				[Target:PlayerAndGrid]
+				[UseCustomTargeting:true]
+
+				[MatchAllFilters:OutsideOfSafezone]
+				[MatchAllFilters:Relation]
+				[MatchAllFilters:Owner]
+
+				[MaxDistance:25000]
+
+				[Relations:Neutral]
+				[Relations:Enemy]
+				
+				[Owners:Player]
+				[Owners:NPC]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

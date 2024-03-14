@@ -17,9 +17,8 @@
 
 				[Conditions:APS-Is-Not-Movement-Functional]
 
-				[MaxActions:2]
+				[MaxActions:1]
 				[Actions:APS-Action-Retreat]
-				[Actions:APS-Action-Remove-Known-Player-Area]
 			</Description>
 		</EntityComponent>
 	</EntityComponents>

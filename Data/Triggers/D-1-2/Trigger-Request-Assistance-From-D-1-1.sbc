@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>APS-Trigger-D-1-2-Request-Assistance-From-D-1-1</SubtypeId>
+			</Id>
+			<Description>
+				[RivalAI Trigger]
+
+				[UseTrigger:true]
+				[Type:CommandReceived]
+
+				[CommandReceiveCode:D-1-1-Request-Assistance]
+
+				[MinCooldownMs:15000]
+				[MaxCooldownMs:15001]
+				[StartsReady:true]
+				[MaxActions:-1]
+
+				[Actions:APS-Action-D-1-2-Request-Assistance-From-D-1-1]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

@@ -12,13 +12,10 @@
 				
 				[EnableBlocks:true]
 
-				[EnableBlockNames:Warfare Battery]
-				[EnableBlockStates:Off]
-
-				[EnableBlockNames:Small Battery]
+				[EnableBlockNames:Energy]
 				[EnableBlockStates:Off]
 				
-				[EnableBlockNames:Small Warfare Reactor]
+				[EnableBlockNames:Energy Producer]
 				[EnableBlockStates:Off]
 			</Description>
 		</EntityComponent>

@@ -4,7 +4,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Chat-Create-Known-Player-Area</SubtypeId>
+				<SubtypeId>APS-Chat-D-1-1-Create-Known-Player-Area</SubtypeId>
 			</Id>
 			<Description>
 				[RivalAI Chat]

@@ -24,52 +24,5 @@
       			[ChatData:APS-Chat-Retreat]
 			</Description>
 		</EntityComponent>
-
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-			<Id>
-				<TypeId>Inventory</TypeId>
-				<SubtypeId>APS-Chat-Retreat</SubtypeId>
-			</Id>
-			<Description>
-				[RivalAI Chat]
-				
-				[UseChat:true]
-				[StartsReady:true]
-				[BroadcastRandomly:true]
-				
-				[Author:Core]
-				[Color:White]
-				
-				[ChatMessages:En route for repairs, returning to base for maintenance]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Repair dispatched, heading back for servicing]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Initiating repair protocol, inbound for maintenance]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Alert! Inbound for repairs, returning for maintenance]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Dispatched for maintenance, returning to base for servicing]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:En route, returning for maintenance procedures]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Repair protocol initiated, on its way for servicing]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Scheduled for repairs, returning for maintenance procedures]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Maintenance deployed, heading back for servicing]
-				[BroadcastChatType:Chat]
-
-				[ChatMessages:Alert! Repair inbound, returning for maintenance procedures]
-				[BroadcastChatType:Chat]
-			</Description>
-		</EntityComponent>
 	</EntityComponents>
 </Definitions>
